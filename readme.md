@@ -1,6 +1,7 @@
 ## Shopware 6 Basic Dockware Setup
 Create docker-compose.yml for shopware project
-handy docker commands:
+
+docker commands:
 
 ```docker compose up -d```
 
