@@ -8,4 +8,4 @@ handy docker commands:
 
 ```docker exec -it container_name bash```
 
-(local database manager)[http://localhost/adminer.php]
+[local database manager](http://localhost/adminer.php)
