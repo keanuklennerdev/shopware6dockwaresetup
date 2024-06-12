@@ -41,6 +41,18 @@ copy shopware files to local system:
 
 enable bind mounting via volumes in ```docker-compose.yml```
 
-start container with bind mounting
+start container with bind mounting:
 
 ```docker compose up -d```
+
+change the owner of the local project path to www-data (ID:33):
+
+```sudo chown www-data:www-data <ProjectBasePath> -R```
+
+change basic permissions:
+
+```sudo chgrp -R 33 ./src```
+
+change write permissions for cache/log folder:
+
+```sudo chmod a+w ./src/var/*```
