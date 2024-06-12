@@ -1,9 +1,6 @@
-version: "3"
-
 services:
-
     shopware:
-        image: dockware/dev:6.5.7.3
+        image: dockware/dev:6.5.8.8
         container_name: shopware
         ports:
             - "22:22"     # ssh
@@ -11,17 +8,15 @@ services:
             - "8888:8888" # watch admin
             - "9998:9998" # watch storefront proxy
             - "9999:9999" # watch storefront
-        volumes:
-            - "./src:/var/www/html"
         networks:
             - web
         environment:
             - XDEBUG_ENABLED=0
             - PHP_VERSION=8.2
             - NODE_VERSION=18
+        volumes:
+            - "./src:/var/www/html/"
 
 networks:
     web:
         external: false
-
-
