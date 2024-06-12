@@ -56,3 +56,7 @@ change basic permissions:
 change write permissions for cache/log folder:
 
 ```sudo chmod a+w ./src/var/*```
+
+change owner of docker-compose.yml back to yours (check via whoami command):
+
+```sudo chown username:username docker-compose.yml```
